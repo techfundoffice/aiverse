@@ -4,6 +4,7 @@ import { Menu, X } from 'lucide-react'
 import Sidebar from './Sidebar'
 import DarkModeToggle from './DarkModeToggle'
 import AIAssistantChatCopilot from './AIAssistantChatCopilot'
+import StreamingBanner from './StreamingBanner'
 import { useState } from 'react'
 
 function Layout() {
@@ -17,7 +18,10 @@ function Layout() {
       <a href="#main-content" className="skip-link sr-only focus:not-sr-only">
         Skip to main content
       </a>
-      
+
+      {/* Streaming Banner */}
+      <StreamingBanner />
+
       {/* Enhanced Navigation Bar */}
       <nav className="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 sticky top-0 z-50 transition-colors duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
